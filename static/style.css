@@ -1,0 +1,157 @@
+form {
+    width: 400px;
+    margin: 0 auto;
+  }
+  :root {
+    --hue: 90;
+    --primary-color:#cc0e0e;
+    --primary-hover: hsl(var(--hue), 92%, 33%);
+    --secundary-color: hsl(0, 0%, 100%);
+    --third-color: hsla(0, 0%, 100%, 0.1);
+    --bg-color: hsl(0, 2%, 80%);
+  
+    --headline: hsl(0, 0%, 5%);
+    --paragraph: headline: hsl(0, 0%, 10%);
+    --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
+  
+    
+  
+    --nav-height: 7.2rem;
+  }
+
+  h1, h2,title,button {
+    color: #333;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  /* Estilize os campos de entrada */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+select:hover {
+  border-color: #999;
+}
+
+/* Estilize o botão de envio */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Adicione animações */
+input, textarea, select {
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+
+}
+
+.button {
+    background: none;
+    border: 0.2rem solid var(--primary-color);
+  
+    margin-bottom: 6rem;
+    padding: 1.4rem 3rem;
+  
+    width: fit-content;
+  
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+  
+    position: relative;
+  
+    transition: 400ms;
+  }
+  
+  body.light-mode .button,
+  body.light-mode #home h4 {
+    filter: brightness(0.8);
+  }
+  
+  .button:hover {
+    color: #fff;
+    background-color: var(--primary-hover);
+    border: 0.2rem solid var(--primary-hover);
+    cursor: pointer;
+  }
+  
+  body.light-mode .button:hover {
+    filter: none;
+  }
+
+  #backToTopButton circle {
+    fill: var(--primary-color);
+  }
+  
+  #contact li path,
+  #navigation button.open-menu path[stroke*="#00856F"] {
+    stroke: var(--primary-color);
+  }
+  
+  #navigation.scroll button.open-menu path[stroke*="#00856F"] {
+    stroke: var(--paragraph-2);
+  }
+
+  
