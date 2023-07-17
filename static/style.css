@@ -18,6 +18,29 @@ form {
   
     --nav-height: 7.2rem;
   }
+  .alert-box {
+    background-color: #fff9db;
+    border: 2px solid #ffdb58;
+    border-radius: 4px;
+    padding: 16px;
+    position: relative;
+  }
+  
+  .alert-box::before {
+    content: "!";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #ffdb58;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+  }
 
   h1, h2,title,button {
     color: #333;

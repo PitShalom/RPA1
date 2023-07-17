@@ -1,15 +1,32 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Formulário de Informações Pessoais</title>
-  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 <body>
-  <h1>Formulário de Informações Pessoais</h1>
-  <a class="button">Iniciar ROBÔ</a>
+  <h1>Formulário de Informações pewqeq</h1>
+  <a class="button" onclick="iniciarRobo()">Iniciar ROBÔ</a>
   
 
-  <form action="processar_formulario.php" method="POST">
+  <form method="POST">
+    <div class="alert-box">
+    <p>Atenção! Ao clicar no botão "Iniciar Robô", você está prestes a iniciar um programa de automação seguro.
+
+      O nosso Robô de Processos Automatizados (RPA) irá realizar tarefas específicas para você, de forma precisa e eficiente. Neste caso, o robô irá abrir guias e preencher formulários, facilitando o seu trabalho.
+      
+      Gostaríamos de enfatizar que a segurança do seu uso é uma prioridade para nós. O robô foi projetado para trabalhar dentro de parâmetros estritamente definidos, seguindo regras pré-estabelecidas. Ele não acessará, modificará ou compartilhará qualquer informação além do que é necessário para executar as tarefas solicitadas.
+      
+      Adotamos medidas de segurança rigorosas para garantir que suas informações permaneçam protegidas durante todo o processo de automação. Todas as conexões são criptografadas e os dados são armazenados de forma segura.
+      
+      Portanto, sinta-se tranquilo ao utilizar o botão "Iniciar Robô" e deixe que ele facilite sua interação com os formulários e guias.
+      
+      Caso tenha alguma dúvida ou preocupação, estamos à disposição para esclarecê-las. Obrigado pela confiança em nosso sistema de automação!
+      
+      Atenciosamente,
+      Pietro Dev</p>
+  </div>
     <h2>Informações de Contato</h2>
     <label for="nome">Nome completo:</label>
     <input type="text" id="nome" name="nome" required>
@@ -23,7 +40,7 @@
     <select id="genero" name="genero">
       <option value="masculino">Masculino</option>
       <option value="feminino">Feminino</option>
-      <option value="outro">Outro</option>
+      <option value="outro">Outrossssssss</option>
     </select>
     <br>
 
@@ -31,7 +48,7 @@
     <textarea id="endereco" name="endereco" required></textarea>
     <br>
 
-    <label  for="telefone" class="line typing">Número de telefone:</label>
+    <label  for="telefone" class="line typing">Número de2222222222222 telefone:</label>
     <input type="tel" id="telefone" name="telefone" required>
     <br>
 
@@ -84,11 +101,13 @@
 
     <label for="ano_conclusao">Ano de conclusão:</label>
     <input type="number" id="ano_conclusao" required>
-    <script>
-      function iniciarRobo() {
-        fetch('/iniciar-robo', { method: 'POST' });  // Chama a rota '/iniciar-robo' via POST
-      }
+    
+     <script>
+    function iniciarRobo() {
+      fetch('/iniciar-robo', { method: 'POST' });  // Chama a rota '/iniciar-robo' via POST
+    }
     </script>
    
 </body>
 </html>
+
