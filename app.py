@@ -51,7 +51,7 @@ def iniciar_robo():
    
     time.sleep(1)
     select_element = driver.find_element(By.ID, "genero")
-    select = Select(select_element)
+    select = Select(select_elemect_element)
     option_text = "Feminino"  
     select.select_by_visible_text(option_text)
     time.sleep(1)
